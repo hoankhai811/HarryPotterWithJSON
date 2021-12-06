@@ -1,0 +1,16 @@
+{
+  "character": [
+    {
+      "id": 1,
+      "name": "Harry Potter",
+      "house": "Gryffindor",
+      "image": "http://hp-api.herokuapp.com/images/harry.jpg"
+    },
+    {
+      "house": "Gryffindor",
+      "image": "http://hp-api.herokuapp.com/images/ron.jpg",
+      "name": "Ron Weasley",
+      "id": 2
+    }
+  ]
+}

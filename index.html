@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./grid.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid wide">
+      <section class="header">
+        <div class="header__navbar">
+          <a href=""> Harry Potter </a>
+          <div class="header__navbar-list">
+            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+            <lord-icon
+              class="icon-heart"
+              src="https://cdn.lordicon.com/rjzlnunf.json"
+              trigger="hover"
+              colors="primary:#e5b537,secondary:#e5b537"
+              stroke="100"
+              style="height: 50px"
+            >
+            </lord-icon>
+            Fav Characters
+          </div>
+          <ul class="navbar__favorated">
+            <li class="navbar__list">
+              <div class="navbar__text">
+                <h3 class="navbar__name">Harry Potter</h3>
+                <span class="navbar__house">House: Gryffindor</span>
+              </div>
+              <img
+                src="http://hp-api.herokuapp.com/images/harry.jpg"
+                class="navbar__img"
+                alt="Lỗi API"
+              />
+              <ion-icon class="navbar__delete" name="trash-outline"></ion-icon>
+            </li>
+          </ul>
+        </div>
+        <div class="header__content">
+          <h1 class="header__heading">Find out your favorate Characters</h1>
+          <button class="header__btn btn">Let's start</button>
+        </div>
+        <div class="background__header"></div>
+      </section>
+      <section class="body">
+        <div class="form-field">
+          <input type="text" name="search" class="form-input" placeholder=" " />
+          <label class="form-label">Search for a character</label>
+        </div>
+
+        <div class="row box"></div>
+      </section>
+      <section class="footer">
+        <div class="form">
+          <div class="image--preview">
+            <img src=" " class="image--preview__image" />
+            <span class="image--preview__text">image preview</span>
+          </div>
+          <label for="input-img" class="btn insert-btn">Insert Image</label>
+          <input type="file" id="input-img" accept="image/*" />
+          <label class="label-insert" for="name">Name</label>
+          <input type="text" name="name" id="name" class="input-insert" />
+          <label class="label-insert" for="house">House</label>
+          <input type="text" id="house" name="house" class="input-insert" />
+          <button id="create-btn" class="btn">Submit</button>
+        </div>
+      </section>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
